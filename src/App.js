@@ -5,13 +5,16 @@ import MyShare from './components/MysharedComponent'
 import WithSnow from './components/WithSnow'
 import Window from './components/Window'
 import EnhanceWindow from './HOC/enhanceWindow'
-
+import PortHole from './components/Porthole'
+import WideWindow from './components/wideWindow'
 
 const Test = (params) => {
   return (<div>{JSON.stringify(params)}</div>)
 }
 
 const WindowWithSnow = EnhanceWindow(Window)
+const PortHoleWithSnow = EnhanceWindow(PortHole)
+const WideWindowWithSnow = EnhanceWindow(WideWindow)
 
 class App extends Component {
   render() {
@@ -35,6 +38,8 @@ class App extends Component {
         <Window/> */}
 
         <WindowWithSnow />
+        <PortHoleWithSnow />
+        <WideWindowWithSnow />
       </div>
     );
   }

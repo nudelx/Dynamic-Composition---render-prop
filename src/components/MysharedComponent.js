@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 class MyShare extends Component {
-  state = { alex: 'HOC DIE !!!'}
+  state = { 'HOC': 'IS FOR KIDS' }
 
   render() {
     return (

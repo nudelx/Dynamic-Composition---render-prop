@@ -86,8 +86,32 @@ body { background-color:#333; }
   width: 200px;
 }
 
+.hor-wide {
+  border-top: 4px double #ccc;
+  top: 100px;
+  width: 400px;
+}
+
 .vert {
   border-left: 4px double #ccc;
   left: 100px;
   height: 200px;
+}
+
+.vert-wide {
+  left: 200px;
+}
+
+.vert-wide-wide {
+  left: 300px;
+}
+
+
+.window-port {
+  border-radius: 200px;
+  border: 10px dotted #ccc;
+}
+
+.wide {
+  width: 400px;
 }
