@@ -1,8 +1,14 @@
 import React , {Component} from  'react'
 
 class WideWindow extends Component {
+
+  renderSnow() {
+    return (<div className={'snow'} />)
+  }
+
   render() {
-    const { snow, turnOnTheSnow, turnOffTheSnow } = this.props
+    console.log('wide', this.props)
+    const { snow, turnOnTheSnow, turnOffTheSnow, playMusic } = this.props
     return (
       <div
         className={'window wide'}
@@ -13,7 +19,12 @@ class WideWindow extends Component {
         <div className={'vert vert-wide'} />
         <div className={'vert vert-wide-wide'} />
         <div className={'hor hor-wide'} />
-        {snow ? <div className={'snow'} /> : null}
+        {
+          snow
+          ? this.renderSnow()
+          : null
+        }
+         {snow && playMusic && playMusic()}
       </div>
     )
   }

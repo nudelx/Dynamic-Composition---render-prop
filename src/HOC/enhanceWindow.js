@@ -19,6 +19,7 @@ const EnhanceWindow = Window => class extends Component {
         {...this.state}
         turnOffTheSnow={this.turnOffTheSnow}
         turnOnTheSnow={this.turnOnTheSnow}
+        {...this.props}
       />
     )
   }
