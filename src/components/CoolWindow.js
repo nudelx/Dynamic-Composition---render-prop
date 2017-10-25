@@ -14,31 +14,30 @@ export const common = {
   }
 }
 
-
+// mixins : [common, common1]
+// constructor(props) {
+//   super(props)
+//   this.state = { snow: false }
+//   Object.assign(this, common)
+//   console.log(this)
+// }
 
 class CoolWindow extends Component {
-
-  // mixin : [common, common1]
-  // constructor(props) {
-  //   super(props)
-  //   this.state = { snow: false }
-  //   Object.assign(this, common)
-  //   console.log(this)
-  // }
-
+  
   state = { snow: false }
 
-  turnOnTheSnow =  () =>  {
+  turnOnTheSnow = () =>  {
     // very long and complicated code
     this.setState({ snow: true })
   }
 
-  turnOffTheSnow =  () => {
+  turnOffTheSnow = () => {
     // very long and complicated code
     this.setState({ snow: false })
   }
 
   render() {
+
     const { snow } = this.state
     return (
       <div
@@ -48,7 +47,7 @@ class CoolWindow extends Component {
       >
         <div className={'vert'} />
         <div className={'hor'} />
-        {snow ? <div className={'snow'} /> : null}
+        { snow ? <div className={'snow'} /> : null }
       </div>
     )
   }

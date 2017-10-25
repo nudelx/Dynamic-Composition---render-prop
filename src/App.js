@@ -25,7 +25,7 @@ class App extends Component {
 
         {/* <StepOne /> */}
         {/* <StepTwo /> */}
-        {/* <StepThree /> */}
+        <StepThree />
         {/* <StepFour /> */}
 
         {/* <MyShare>
@@ -46,24 +46,15 @@ class App extends Component {
         <PortHoleWithSnow />
         <WideWindowWithSnow /> */}
 
-        <DCCWindow>
-
+        {/* <DCCWindow>
           {
-            { snow, renderSnow} => (
+            coolStuff => (
               <div>
-                <WideWindow snow={snow}/>
-                <WideWindow {...coolStuff} />
-                <WideWindow {...coolStuff} />
-                <WideWindow {...coolStuff} />
-                <WideWindow {...coolStuff} />
-                <WideWindow {...coolStuff} />
-                <WideWindow {...coolStuff} />
-                <WideWindow {...coolStuff} />
                 <WideWindow {...coolStuff} />
               </div>
             )
           }
-        </DCCWindow>
+        </DCCWindow> */}
 
       </div>
     );

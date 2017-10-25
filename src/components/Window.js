@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 const Window = (props) => {
   const { snow, turnOnTheSnow, turnOffTheSnow, renderSnow } = props
   return (
@@ -11,7 +12,7 @@ const Window = (props) => {
       <div className={'hor'} />
       {
         snow && renderSnow
-        ? renderSnow() 
+        ? renderSnow()
         : null}
     </div>
   )
