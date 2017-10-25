@@ -46,15 +46,24 @@ class App extends Component {
         <PortHoleWithSnow />
         <WideWindowWithSnow /> */}
 
-        {/* <DCCWindow>
+        <DCCWindow>
+
           {
-            coolStuff => (
+            { snow, renderSnow} => (
               <div>
+                <WideWindow snow={snow}/>
+                <WideWindow {...coolStuff} />
+                <WideWindow {...coolStuff} />
+                <WideWindow {...coolStuff} />
+                <WideWindow {...coolStuff} />
+                <WideWindow {...coolStuff} />
+                <WideWindow {...coolStuff} />
+                <WideWindow {...coolStuff} />
                 <WideWindow {...coolStuff} />
               </div>
             )
           }
-        </DCCWindow> */}
+        </DCCWindow>
 
       </div>
     );
