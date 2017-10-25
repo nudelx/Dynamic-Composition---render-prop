@@ -5,6 +5,7 @@ import MyShare from './components/MysharedComponent'
 import WithSnow from './components/WithSnow'
 import Window from './components/Window'
 import EnhanceWindow from './HOC/enhanceWindow'
+import DCCWindow from './DCC/DynamicCompositionComponent'
 import PortHole from './components/Porthole'
 import WideWindow from './components/wideWindow'
 
@@ -37,9 +38,18 @@ class App extends Component {
         <Window/>
         <Window/> */}
 
-        <WindowWithSnow />
+        {/* <Window /> */}
+
+        {/* <WindowWithSnow />
         <PortHoleWithSnow />
-        <WideWindowWithSnow />
+        <WideWindowWithSnow /> */}
+
+        {/* <DCCWindow>
+          {
+            coolStuff => (<WideWindow {...coolStuff} />)
+          }
+        </DCCWindow> */}
+
       </div>
     );
   }
