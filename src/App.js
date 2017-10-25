@@ -12,8 +12,6 @@ const Test = (params) => {
   return (<div>{JSON.stringify(params)}</div>)
 }
 
-
-
 class App extends Component {
 
 
