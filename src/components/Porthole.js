@@ -1,20 +1,23 @@
 import React , {Component} from  'react'
 
-class Window extends Component {
+class PortHole extends Component {
   render() {
-    const { snow, turnOnTheSnow, turnOffTheSnow } = this.props
+    const { snow, turnOnTheSnow, turnOffTheSnow, renderSnow } = this.props
     return (
       <div
         className={'window window-port'}
         onMouseEnter={turnOnTheSnow}
         onMouseLeave={turnOffTheSnow}
       >
-
-        {snow ? <div className={'snow'} /> : null}
+        {
+          snow && renderSnow
+          ? renderSnow()
+          : null
+        }
       </div>
 
     )
   }
 }
 
-export default Window
+export default PortHole

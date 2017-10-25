@@ -13,12 +13,17 @@ const EnhanceWindow = Window => class extends Component {
     this.setState({snow: false})
   }
 
+  renderSnow () {
+    return (<div className={'snow'} />)
+  }
+
   render() {
     return (
       <Window
         {...this.state}
         turnOffTheSnow={this.turnOffTheSnow}
         turnOnTheSnow={this.turnOnTheSnow}
+        renderSnow={this.renderSnow}
         {...this.props}
       />
     )

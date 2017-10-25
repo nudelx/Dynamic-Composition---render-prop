@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 const Window = (props) => {
-  const { snow, turnOnTheSnow, turnOffTheSnow } = props
+  const { snow, turnOnTheSnow, turnOffTheSnow, renderSnow } = props
   return (
     <div
       className={'window'}
@@ -9,7 +9,10 @@ const Window = (props) => {
     >
       <div className={'vert'} />
       <div className={'hor'} />
-      {snow ? <div className={'snow'} /> : null}
+      {
+        snow && renderSnow
+        ? renderSnow() 
+        : null}
     </div>
   )
 }
