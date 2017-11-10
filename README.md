@@ -3,4 +3,6 @@
 [logo]: https://github.com/nudelx/Dynamic-Composition---render-prop/raw/master/media/letitsnow.gif
 ![alt text][logo]
 
-kNote live coding 
+
+Comparison of react common patters. Render prop vs HOC, as a way to share the functionality.
+kNote live coding
