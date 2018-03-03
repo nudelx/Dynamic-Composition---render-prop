@@ -1,7 +1,7 @@
 import React, { Component }  from 'react'
 
 const EnhanceWindow = Window => class extends Component {
-  state = { snow: false }
+  state = { snow: true }
 
   turnOnTheSnow = () => {
     // very long and complicated code
@@ -36,7 +36,7 @@ export default EnhanceWindow
 
 
 /*
- => donot forget to talk about composition 
+ => donot forget to talk about composition
 const add = x =>  x + 1
 const sub = x =>  x - 1
 const mul2 = x =>  x * 2

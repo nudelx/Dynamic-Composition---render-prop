@@ -26,7 +26,7 @@ class App extends Component {
         {/* <StepOne /> */}
         {/* <StepTwo /> */}
         {/* <StepThree /> */}
-        {/* <StepFour /> */}
+        <StepFour />
 
         {/* <MyShare>
           {state => (<Test state={state} {...{test:'alex'}}/>) }
@@ -46,7 +46,7 @@ class App extends Component {
         <PortHoleWithSnow />
         <WideWindowWithSnow /> */}
 
-        <DCCWindow>
+        {/* <DCCWindow>
           {
             coolStuff => (
               <div>
@@ -56,7 +56,7 @@ class App extends Component {
               </div>
             )
           }
-        </DCCWindow>
+        </DCCWindow> */}
 
       </div>
     );
