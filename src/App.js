@@ -7,6 +7,8 @@ import StepThree from './Steps/StepThree'
 import StepFour from './Steps/StepFour'
 import DCCWindow from './DCC/DynamicCompositionComponent'
 import WideWindow from './components/wideWindow'
+import Porthole from './components/Porthole'
+import Window from './components/Window'
 
 const Test = (params) => {
   return (<div>{JSON.stringify(params)}</div>)
@@ -26,13 +28,13 @@ class App extends Component {
         {/* <StepOne /> */}
         {/* <StepTwo /> */}
         {/* <StepThree /> */}
-        <StepFour />
+        {/* <StepFour /> */}
 
         {/* <MyShare>
           {state => (<Test state={state} {...{test:'alex'}}/>) }
-        </MyShare>
+        </MyShare> */}
 
-        <WithSnow>
+        {/* <WithSnow>
           {'test'}
         </WithSnow> */}
         {/* <Window/>
@@ -46,7 +48,7 @@ class App extends Component {
         <PortHoleWithSnow />
         <WideWindowWithSnow /> */}
 
-        {/* <DCCWindow>
+        <DCCWindow>
           {
             coolStuff => (
               <div>
@@ -56,7 +58,74 @@ class App extends Component {
               </div>
             )
           }
-        </DCCWindow> */}
+        </DCCWindow>
+
+        <DCCWindow>
+          {
+            coolStuff => (
+              <div>
+                <Porthole {...coolStuff} />
+                <Porthole {...coolStuff} />
+                <Porthole {...coolStuff} />
+              </div>
+            )
+          }
+        </DCCWindow>
+
+        <DCCWindow>
+          {
+            coolStuff => (
+              <div>
+                <Window {...coolStuff} />
+                <Window {...coolStuff} />
+                <Window {...coolStuff} />
+              </div>
+            )
+          }
+        </DCCWindow>
+
+        <DCCWindow>
+          {
+            coolStuff => (
+              <div>
+                <WideWindow {...coolStuff} />
+                <Porthole {...coolStuff} />
+                <Window {...coolStuff} />
+              </div>
+            )
+          }
+        </DCCWindow>
+
+        <DCCWindow>
+          {
+            coolStuff => (
+              <div>
+                <Window {...coolStuff} />
+              </div>
+            )
+          }
+        </DCCWindow>
+
+        <DCCWindow>
+          {
+            coolStuff => (
+              <div>
+                <Porthole {...coolStuff} />
+              </div>
+            )
+          }
+        </DCCWindow>
+
+        <DCCWindow>
+          {
+            coolStuff => (
+              <div>
+                <WideWindow {...coolStuff} />
+              </div>
+            )
+          }
+        </DCCWindow>
+
 
       </div>
     );
