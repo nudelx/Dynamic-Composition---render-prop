@@ -1,7 +1,7 @@
 import React, { Component }  from 'react'
 
 const EnhanceWindow = Window => class extends Component {
-  state = { snow: true }
+  state = { snow: false }
 
   turnOnTheSnow = () => {
     // very long and complicated code

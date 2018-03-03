@@ -28,7 +28,7 @@ class App extends Component {
         {/* <StepOne /> */}
         {/* <StepTwo /> */}
         {/* <StepThree /> */}
-        {/* <StepFour /> */}
+        <StepFour />
 
         {/* <MyShare>
           {state => (<Test state={state} {...{test:'alex'}}/>) }
